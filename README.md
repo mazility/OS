@@ -1,10 +1,10 @@
 # OS [CS2205]
 Repository for all assignment from Operating System 
-## Assignment 1 
+## CPU Scheduling(Assignment 1) 
 ```
-CPU Scheduling
+Scheduling Algorithms
 ```
-* FCFS
-* SRFT
-* Priority
-* Round Robin
+* [First Come, First Served (FCFS) Scheduling](https://www.geeksforgeeks.org/program-fcfs-scheduling-set-1/)
+* [Shortest Remaining Time First (SRTF) Scheduling](https://www.javatpoint.com/os-srtf-scheduling-algorithm)
+* [Priority Scheduling](https://www.tutorialspoint.com/operating_system/os_process_scheduling_algorithms.htm)
+* [Round-Robin Scheduling](https://en.wikipedia.org/wiki/Round-robin_scheduling)

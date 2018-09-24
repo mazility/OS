@@ -4,7 +4,7 @@ Repository for all assignment from Operating System
 ```
 Assignment 1 
 ```
-*FCFS
-*SRFT
-*Priority
-*Round Robin
+* FCFS
+* SRFT
+* Priority
+* Round Robin

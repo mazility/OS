@@ -2,7 +2,7 @@
 Repository for all assignment from Operating System 
 ## Assignment 1 
 ```
-Sceduling 
+CPU Scheduling
 ```
 * FCFS
 * SRFT

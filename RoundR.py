@@ -16,11 +16,14 @@ def RoundR():
     stopper, counter = 0, 0
     res_arr, res_temp, res_bt = list(), list(), list()
     res_c = list()
+    t_bt, f_bt = [], []
     res_temp.append(0)
     for i in range(0, len(bt)):
+        f_bt.append(0)
         res_bt.append(bt[i])
         res_c.append(0)
         res_arr.append(bt[i])
+        t_bt.append(bt[i])
         stopper += bt[i]
 
     temp_proc1 = list()
@@ -62,23 +65,24 @@ def RoundR():
     r_round = round/inp
     if r_round > int(r_round):
         r_round += 1
-    print(res_arr, 'r_round', r_round)
-    for i in range(0, inp):
-        print(res_arr[i])
-        for j in range(int(r_round), inp):
-            if res_arr[i] > tq:
-                temp = res_arr[i]
-                res_arr.pop(i)
-                res_arr.insert(i, temp - tq)
-                print('j: ',j , 'inp', inp)
-    print(res_arr[j])
 
-    print(res_arr)
-    for i in range(0, len(bt)):
-        if i == 0:
-            t += res_arr[i]
-            res_arr.pop(i)
-            res_arr.insert(i, t - (temp_proc1[i] - proc2[i]))
+    for i in range(0, len(t_bt)):
+        for j in range(0, len(t_bt)):
+            if t_bt[i] > tq:
+                temp = t_bt[i]
+                t_bt.pop(i)
+                t_bt.insert(i, temp - tq)
+                temp = f_bt[i]
+                f_bt.pop(i)
+                f_bt.insert(i, temp + 1 )
+
+    for i in range(0, len(f_bt)):
+        f_bt[i] *= 4
+
+    for i in range(0, len(res_arr)):
+        t = res_arr[i]
+        res_arr.pop(i)
+        res_arr.insert(i, t - proc2[i] - f_bt[i])
         avgwt += res_arr[i]
 
     avgwt = float(avgwt) / inp

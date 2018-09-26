@@ -5,7 +5,7 @@ Repository for all assignment from Operating System
 Scheduling Algorithms
 ```
 * Sort: [First Come, First Served (FCFS) Scheduling](https://www.geeksforgeeks.org/program-fcfs-scheduling-set-1/)
-  - **Complete** [code](https://github.com/mazility/OS/blob/master/FCFS.py)
+  - **Complete** [**code**](https://github.com/mazility/OS/blob/master/FCFS.py)
 * Sort: [Shortest Remaining Time First (SRTF) Scheduling](https://www.javatpoint.com/os-srtf-scheduling-algorithm)
   - **Complete** [code](https://github.com/mazility/OS/blob/master/SRTF.py)
 * Sort: [Priority Scheduling](https://www.tutorialspoint.com/operating_system/os_process_scheduling_algorithms.htm)

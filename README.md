@@ -2,7 +2,7 @@
 Repository for all assignment from Operating System 
 ## CPU Scheduling(Assignment 1) 
 ```
-Scheduling Algorithms in Python
+Scheduling Algorithms with arrival time in Python
 ```
 - Source: [First Come, First Served (FCFS) Scheduling](https://www.geeksforgeeks.org/program-fcfs-scheduling-set-1/)
 - Source: [Shortest Remaining Time First (SRTF) Scheduling](https://www.javatpoint.com/os-srtf-scheduling-algorithm)

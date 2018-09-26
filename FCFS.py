@@ -3,7 +3,7 @@ def main():
 
 
 def FCFS():
-    inp = int(input('Enter the numbers of process: '))
+    inp = int(input('Enter the numbers of process: \n'))
 
     proc = []
     for i in range(0, inp):

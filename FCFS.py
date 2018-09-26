@@ -20,8 +20,9 @@ def FCFS():
         if i > 0:
             temp += bt[i-1]
             wt.append(bt[i] + temp)
-        wt.append(bt[i] + temp)
-        avgwt += wt[i]
+        else:
+            wt.append(bt[i] + temp)
+        avgwt += (wt[i] - (proc[i]-1))
     avgwt = float(avgwt)/inp
     print("\n")
     print("Process\t\t  Burst Time\t\t  Waiting Time")

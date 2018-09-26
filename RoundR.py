@@ -5,9 +5,10 @@ def main():
 def RoundR():
     print("Enter the numbers of process: ")
     inp = int(input())
-    proc = list()
+    proc, proc2 = list(), list()
     for i in range(0, inp):
         proc.insert(i, i + 1)
+        proc2.insert(i, i)
     print("\nEnter the burst time of the process with spaces: \n")
     bt = list(map(int, input().split()))
     print("\nEnter the time quantum value: ")
@@ -50,11 +51,34 @@ def RoundR():
             i += len(bt) + 1
     avgwt = 0
     t = 0
+    round = 0
+    for i in range(0, tq-1):
+        for j in range(0, tq-1):
+            if res_bt[j] > res_bt[j+1]:
+                temp = res_bt[j]
+                res_bt[j] = res_bt[j+1]
+                res_bt[j+1] = temp
+    round = res_bt[inp-1]
+    r_round = round/inp
+    if r_round > int(r_round):
+        r_round += 1
+    print(res_arr, 'r_round', r_round)
+    for i in range(0, inp):
+        print(res_arr[i])
+        for j in range(int(r_round), inp):
+            if res_arr[i] > tq:
+                temp = res_arr[i]
+                res_arr.pop(i)
+                res_arr.insert(i, temp - tq)
+                print('j: ',j , 'inp', inp)
+    print(res_arr[j])
+
+    print(res_arr)
     for i in range(0, len(bt)):
         if i == 0:
             t += res_arr[i]
             res_arr.pop(i)
-            res_arr.insert(i, t - temp_proc1[i])
+            res_arr.insert(i, t - (temp_proc1[i] - proc2[i]))
         avgwt += res_arr[i]
 
     avgwt = float(avgwt) / inp

@@ -29,7 +29,6 @@ def SRTF():
                 bt_sort1[j+1] = temp
     smallest_bt = bt_sort1[0]
     smallest_marker = 0
-
     for i in range(0, len(bt_sort1)):
         smallest_marker = bt_sort2.index(smallest_bt)
 

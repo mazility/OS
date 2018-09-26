@@ -1,5 +1,5 @@
 def main():
-    print('\n\nPlease select the number of CPU scheduling options below\n1: FCFS\n2: Preemptive SJF\n3: Priority\n4: Round Robin')
+    print('\n\nPlease select the number of CPU scheduling options below\n1: FCFS\n2: Preemptive SJF(SRTF)\n3: Priority\n4: Round Robin')
     selection = 0
     while not selection:
         try:

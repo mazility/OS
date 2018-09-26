@@ -2,7 +2,7 @@
 Repository for all assignment from Operating System 
 ## CPU Scheduling(Assignment 1) 
 ```
-Scheduling Algorithms
+Scheduling Algorithms in Python
 ```
 * Source: [First Come, First Served (FCFS) Scheduling](https://www.geeksforgeeks.org/program-fcfs-scheduling-set-1/)
   - [**code**](https://github.com/mazility/OS/blob/master/FCFS.py)

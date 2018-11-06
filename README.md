@@ -19,4 +19,6 @@ Scheduling Algorithms with arrival time in Python
 Safety Algorithm
 ```
 - Source: [Banker's algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm)
+### Completion
+  - [x] [**Banker's algorithm**](https://github.com/mazility/OS/blob/master/FCFS.py)
 

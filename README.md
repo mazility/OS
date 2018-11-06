@@ -13,3 +13,10 @@ Scheduling Algorithms with arrival time in Python
   - [x] [**Round-Robin**](https://github.com/mazility/OS/blob/master/RoundR.py)
   - [x] [**SRTF**](https://github.com/mazility/OS/blob/master/SRTF.py)
   - [x] [**Priority**](https://github.com/mazility/OS/blob/master/Priority.py)
+  
+## Banker's Algorithm(Assignment 2) 
+```
+Safety Algorithm
+```
+
+

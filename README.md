@@ -35,5 +35,5 @@ Implements the FIFO, LRU, and Optimal page replacement algorithms
 ### Completion
   - [x] [**FIFO, First In First Out algorithm**](https://github.com/mazility/OS/blob/master/FIFO.py)
   - [x] [**LRU, Least Recently Used algorithm**](https://github.com/mazility/OS/blob/master/LRU.py)
-  - [ ] [**Optimal algorithm**]()
+  - [ ] [**Optimal algorithm**](https://github.com/mazility/OS/blob/master/Optimal.py)
   

@@ -23,3 +23,17 @@ Safety Algorithm
 ### Completion
   - [x] [**Banker's algorithm**](https://github.com/mazility/OS/blob/master/BankerAlgorithm.py)
 
+## Page Replacement Algorithm(Assignment 3) 
+```
+Implements the FIFO, LRU, and Optimal page replacement algorithms 
+```
+
+- Source: [FIFO, First In First Out algorithm] (https://www.geeksforgeeks.org/program-page-replacement-algorithms-set-2-fifo/)
+- Source: [LRU, Least Recently Used algorithm] (https://www.geeksforgeeks.org/program-page-replacement-algorithms-set-1-lru/)
+- Source: [Optimal algorithm] (https://en.wikipedia.org/wiki/Page_replacement_algorithm)
+
+### Completion
+  - [x] [**FIFO, First In First Out algorithm**](https://github.com/mazility/OS/blob/master/FIFO.py)
+  - [x] [**LRU, Least Recently Used algorithm**](https://github.com/mazility/OS/blob/master/LRU.py)
+  - [ ] [**Optimal algorithm**]()
+  

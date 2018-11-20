@@ -1,2 +1,2 @@
-#FIFO page replacement algorithm implementation in python
+#Optimal page replacement algorithm implementation in python
 #Created By: Pannachet Lertananta

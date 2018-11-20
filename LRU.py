@@ -1,4 +1,4 @@
-#FIFO page replacement algorithm implementation in python
+#LRU page replacement algorithm implementation in python
 #Created By: Pannachet Lertananta
 import random
 

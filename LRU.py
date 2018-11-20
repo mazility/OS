@@ -3,6 +3,7 @@
 import random
 
 arr = []
+recently_arr = []
 
 def main():
     global string, frame, page, pagefault
@@ -17,6 +18,7 @@ def main():
 def randomNum():
     for i in range(0, string):
         arr.append(random.randint(0,9))
+        recently_arr.append(arr[i])
     print('\n Random page reference string = ',arr ,'\n')
 
 def pageFault():
@@ -38,7 +40,10 @@ def pageFault():
 
     for i in range(0 + frame, string):
         count = 0
+        r_count = 0
+        t_count = 0
         hitRecord = 0
+        temp = 0
         for j in range(1):
             curNum = i % frame
 
@@ -46,17 +51,33 @@ def pageFault():
                 if page[count] == arr[i]:
                     hit += 1
                     hitRecord = 1
-                    count = 2
+                    count = frame
                     print(' Hit!')
                 else:
                     count += 1
 
+            if hitRecord == 1:
+                while r_count != i - 1:
+                    if recently_arr[r_count] == arr[i]:
+                        recently_arr.pop(r_count)
+                        r_count = i - 1
+                    else:
+                        r_count += 1
+
             if hitRecord == 0:
+                temp = recently_arr[0]
+                recently_arr.pop(0)
                 if page[curNum] != arr[i]:
-                    page.pop(curNum)
-                    page.insert(curNum, arr[i])
+                    while t_count != frame:
+                        if page[t_count] == temp:
+                            page.pop(t_count)
+                            page.insert(t_count, arr[i])
+                            t_count = frame
+                        else:
+                            t_count += 1
                     pagefault += 1
                     print(' Pagefault!')
+            print('', recently_arr,temp)
         print(' Current Page array', page, '\n')
 
 

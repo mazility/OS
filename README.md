@@ -1,3 +1,4 @@
+![alt text](http://www.scitech.au.edu/Images/General/vms-2.jpg)
 # OS [CS2205]
 Repository for all assignment from Operating System Course
 ## CPU Scheduling(Assignment 1) 

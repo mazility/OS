@@ -1,5 +1,5 @@
 # OS [CS2205]
-Repository for all assignment from Operating System 
+Repository for all assignment from Operating System Course
 ## CPU Scheduling(Assignment 1) 
 ```
 Scheduling Algorithms with arrival time in Python
